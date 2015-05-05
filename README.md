@@ -56,6 +56,6 @@ Then in a new tab:
 * Ensure you’ve cd’ed into the html-prototypes folder, then ```npm install``` to install dependencies.
 * To have sass files watched: ```grunt```
 
-Off you go.
+So, off you go.
 
 
