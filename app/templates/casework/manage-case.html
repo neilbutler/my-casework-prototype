@@ -18,17 +18,34 @@
           Manage case
         </h1>
         <div>
-          <ul>
-              <li>
-                  Title number: DN2
-              </li>
-              <li>
-                  Date received: 30 April, 17:50:00.000000
-              </li>
-              <li>
-                  Application reference: LR0012
-              </li>
-          </ul>
+          <table>
+              {% for case in data.case %}
+              <tr>
+                <th>
+                  Title number
+                </th>
+                <td>
+                  {{ case.titleNumber }}
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Application reference
+                </th>
+                <td>
+                  {{ case.applicationReference }}
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Date received
+                </th>
+                <td>
+                  {{ case.dateReceived }}
+                </td>
+              </tr>
+              {% endfor %}
+          </table>
         </div>
         <a href="cases">
           View worklist

@@ -21,9 +21,11 @@
           <ul>
               {% for case in data.cases %}
               <li>
-                {{ case.titleNumber }}
-                {{ case.applicationReference }}
-                {{ case.dateReceived }}
+                <a href="manage-LR0001">
+                  {{ case.titleNumber }}
+                  {{ case.applicationReference }}
+                  {{ case.dateReceived }}
+                </a>
               </li>
               {% endfor %}
           </ul>
