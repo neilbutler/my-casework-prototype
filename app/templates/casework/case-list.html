@@ -41,6 +41,15 @@
                   </a>
               </li>
           </ul>
+          <ul>
+              {% for case in data.cases %}
+              <li>
+                {{ case.titleNumber }}
+                {{ case.applicationReference }}
+                {{ case.dateReceived }}
+              </li>
+              {% endfor %}
+          </ul>
         </div>
       </div>
     </div>

@@ -35,9 +35,24 @@ def proto():
 def hackday():
   return render_template('index-hack.html')
 
+@app.route('/manage')
+def managecase():
+  return render_template('case1.html')
+# ---------------------------------------------------------------------------
+#Neil's stuff
+
+@app.route('/casework/cases')
+def case_list():
+  json_data=open('app/static/data/cases.json', "r")
+  data = json.load(json_data)
+  return render_template('casework/case-list.html', data=data)
+
+
+
+
 # ---------------------------------------------------------------------------
 
-#hackday 
+#hackday
 @app.route('/hackday/land-ownership-record')
 def hackday_land_record():
   return render_template('hackday/land-record.html', next_page="404")
@@ -94,7 +109,7 @@ def govuk_property_details_2_1():
 # ---------------------------------------------------------------------------
 
 # scenario: user wants to find out who owns a property
-# starts on GOV.UK and flows into register view 
+# starts on GOV.UK and flows into register view
 @app.route('/find-owner/search')
 def find_owner_search():
   return render_template('user-find-owner/search.html', next_page="/find-owner/results")
