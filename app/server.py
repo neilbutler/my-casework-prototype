@@ -37,7 +37,7 @@ def hackday():
 
 @app.route('/manage')
 def managecase():
-  return render_template('case1.html')
+  return render_template('casework/manage-case.html')
 # ---------------------------------------------------------------------------
 #Neil's stuff
 
