@@ -2,16 +2,16 @@
     {
         "titleNumber":"DN1",
         "applicationReference":"LR1011",
-        "dateReceived":"01.11.1993"
+        "dateReceived":"1993-11-01 00:00:01"
     },
     {
         "titleNumber":"DN1",
         "applicationReference":"LR0101",
-        "dateReceived":"18.02.1997"
+        "dateReceived":"1997-02-18 00:00:01"
     },
     {
         "titleNumber":"DN1",
         "applicationReference":"LR0001",
-        "dateReceived":"19.02.1997"
+        "dateReceived":"1997-02-19 00:00:01"
     }
 ]}
