@@ -21,7 +21,7 @@
           <ul>
               {% for case in data.cases %}
               <li>
-                <a href="manage-LR0001">
+                <a href="manage-{{case.applicationReference}}">
                   {{ case.titleNumber }}
                   {{ case.applicationReference }}
                   {{ case.dateReceived }}
