@@ -35,7 +35,7 @@ def proto():
 def hackday():
   return render_template('index-hack.html')
 
-@app.route('/manage')
+@app.route('/casework/manage')
 def managecase():
   return render_template('casework/manage-case.html')
 # ---------------------------------------------------------------------------
