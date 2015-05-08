@@ -45,13 +45,13 @@ def managecase():
 def case_list():
   json_data=open('app/static/data/cases.json', "r")
   data = json.load(json_data)
-  return render_template('casework/case-list.html', data=data)
+  return render_template('casework/pageone.html', data=data)
 
 @app.route('/casework/manage-<casenumber>')
 def case_detail(casenumber):
     json_data=open('app/static/data/'+ casenumber+ '.json', "r")
     data = json.load(json_data)
-    return render_template('casework/manage-case.html', data=data)
+    return render_template('casework/pagetwo.html', data=data)
 
 
 # ---------------------------------------------------------------------------

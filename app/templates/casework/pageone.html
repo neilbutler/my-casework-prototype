@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title>
+      Work list
+    </title>
+  </head>
+  <body>
+    <main id="wrapper" role="main">
+      <div id="content">
+        <div>
+          <div>
+            <h1 class="heading-large">
+              Worklist
+            </h1>
+            <div>
+              <table>
+                  <tr>
+                    <th>
+                      Title number
+                    </th>
+                    <th>
+                      Application reference
+                    </th>
+                    <th>
+                      Date received
+                    </th>
+                  </tr>
+                  {% for case in data.cases %}
+                  <tr>
+                    <td>
+                      <a href="manage-{{case.applicationReference}}">
+                        {{ case.titleNumber }}
+                      </a>
+                    </td>
+                    <td>
+                      {{ case.applicationReference }}
+                    </td>
+                    <td>
+                      {{ case.dateReceived }}
+                    </td>
+                  </tr>
+                  {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
